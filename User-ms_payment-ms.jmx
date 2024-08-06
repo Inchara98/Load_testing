@@ -778,7 +778,7 @@
         </HeaderManager>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="get_summary_payments">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="get_summary_payments" enabled="false">
         <stringProp name="ThreadGroup.num_threads">${__P(users,1)}</stringProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -1147,7 +1147,7 @@
           <hashTree/>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="payments" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="payments">
         <stringProp name="ThreadGroup.num_threads">${__P(users,1)}</stringProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -1171,9 +1171,9 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  SV: &quot;aegrQFFKkU1MotFss1eJlIPfhWWjqDN9Bn363UwTwZ7SW63opT9x7WY4IThjRPknAJDohx6/2OvjovgWQ/dJ6ZMAxg44mMbsZJlyuTbB169yqRQXvieuUI15Ba4BQzowkSANKtVOlc+NWgNYv80+kSdj2UvgCxoiJ5RaYz2qQpAB9gwNBwfIZoYAGLJ8k01zzVpbu7V8pwdvrudCQ7XrgYNqy4vZF7IIHIc+hy6h8wuEzE5DWTOZtgWrEO+BNPNvIOES5oAuGhbgvk9OJlVk7kmEb7pExyH4/wtr4jKjcDDy3VTYXzHYnhmBUDUSXdGwen5YBNumuCe3y1NRuIBNrQ==&quot;,&#xd;
-  SK: &quot;KM+q0sV4P58Xrn4Y1VIIKsxYlV5dojIFaMTAvlfQ85Xv4UHR2q7//oRs+NY37cYBTAlJTiVzWU23SGZ4AFRtHN+KpwFOCtjDerAy0ZkuWmlXvBlQWSzw0aMpe/gDz9AFoUBGqV4zERN6AQUXaTubW64wNAaTIWhQvi/i64xma0qAQ+j0yv+xupUUACHVFhK8QC3sSfe3ZTQu8wEsM5+JERhtOLXrQvINngxKjCLEOMQ+Es+G4/ALW2pXjfEVUxv8C20xGJT775yr3qW1Uud4eqY1B9xOz45YW0ldQErXFa7h8I0Z4l1fVzoTptW7I3wTiCQj8ak88H+BJa/HJxy+cg==&quot;,&#xd;
-  Payload: &quot;pbC+XFbsvs7zkBNxwA44ZprXy7QJSh3uqyVZUhzkjDb0pSZ7J9ICln2U8+smFi1LEOHwLKGGhrkSBNgG7vL+A/qb4dCuG5a/tafCjKV1GAs7TOviRdC9irUhMU/ThPs9rIcfZhxXuPIwj/SKL1dFgwNGFEG1AympHxixQVxNxtHYmWQWDilXu5x1Lt7bNLFUAcY8eLDVIdl3tZhjziQoMXrpwWh6jpEvj4qyT6svfibY9mg9peFOCeXj8TfP02hGKVbPhxcjalQg2BTwfBlVxSpi7a2UtnXxocN6qFfHt0kgeZVCV/uqnN3q1BkYVL8c8l5R2KejgtSZQ3U370n30h8pQZDGuGtIZ1BV5+/v/tU=&quot;&#xd;
+  &quot;SV&quot;: &quot;aegrQFFKkU1MotFss1eJlIPfhWWjqDN9Bn363UwTwZ7SW63opT9x7WY4IThjRPknAJDohx6/2OvjovgWQ/dJ6ZMAxg44mMbsZJlyuTbB169yqRQXvieuUI15Ba4BQzowkSANKtVOlc+NWgNYv80+kSdj2UvgCxoiJ5RaYz2qQpAB9gwNBwfIZoYAGLJ8k01zzVpbu7V8pwdvrudCQ7XrgYNqy4vZF7IIHIc+hy6h8wuEzE5DWTOZtgWrEO+BNPNvIOES5oAuGhbgvk9OJlVk7kmEb7pExyH4/wtr4jKjcDDy3VTYXzHYnhmBUDUSXdGwen5YBNumuCe3y1NRuIBNrQ==&quot;,&#xd;
+  &quot;SK&quot;: &quot;KM+q0sV4P58Xrn4Y1VIIKsxYlV5dojIFaMTAvlfQ85Xv4UHR2q7//oRs+NY37cYBTAlJTiVzWU23SGZ4AFRtHN+KpwFOCtjDerAy0ZkuWmlXvBlQWSzw0aMpe/gDz9AFoUBGqV4zERN6AQUXaTubW64wNAaTIWhQvi/i64xma0qAQ+j0yv+xupUUACHVFhK8QC3sSfe3ZTQu8wEsM5+JERhtOLXrQvINngxKjCLEOMQ+Es+G4/ALW2pXjfEVUxv8C20xGJT775yr3qW1Uud4eqY1B9xOz45YW0ldQErXFa7h8I0Z4l1fVzoTptW7I3wTiCQj8ak88H+BJa/HJxy+cg==&quot;,&#xd;
+  &quot;Payload&quot;: &quot;pbC+XFbsvs7zkBNxwA44ZprXy7QJSh3uqyVZUhzkjDb0pSZ7J9ICln2U8+smFi1LEOHwLKGGhrkSBNgG7vL+A/qb4dCuG5a/tafCjKV1GAs7TOviRdC9irUhMU/ThPs9rIcfZhxXuPIwj/SKL1dFgwNGFEG1AympHxixQVxNxtHYmWQWDilXu5x1Lt7bNLFUAcY8eLDVIdl3tZhjziQoMXrpwWh6jpEvj4qyT6svfibY9mg9peFOCeXj8TfP02hGKVbPhxcjalQg2BTwfBlVxSpi7a2UtnXxocN6qFfHt0kgeZVCV/uqnN3q1BkYVL8c8l5R2KejgtSZQ3U370n30h8pQZDGuGtIZ1BV5+/v/tU=&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
