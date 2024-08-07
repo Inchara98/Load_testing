@@ -357,7 +357,7 @@
             <stringProp name="filename"></stringProp>
           </ResultCollector>
           <hashTree/>
-          <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+          <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>
               <name>saveConfig</name>
@@ -1145,7 +1145,7 @@
           <hashTree/>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="payments" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="payments">
         <stringProp name="ThreadGroup.num_threads">${__P(users,1)}</stringProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -1169,9 +1169,9 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;SV&quot;: &quot;aegrQFFKkU1MotFss1eJlIPfhWWjqDN9Bn363UwTwZ7SW63opT9x7WY4IThjRPknAJDohx6/2OvjovgWQ/dJ6ZMAxg44mMbsZJlyuTbB169yqRQXvieuUI15Ba4BQzowkSANKtVOlc+NWgNYv80+kSdj2UvgCxoiJ5RaYz2qQpAB9gwNBwfIZoYAGLJ8k01zzVpbu7V8pwdvrudCQ7XrgYNqy4vZF7IIHIc+hy6h8wuEzE5DWTOZtgWrEO+BNPNvIOES5oAuGhbgvk9OJlVk7kmEb7pExyH4/wtr4jKjcDDy3VTYXzHYnhmBUDUSXdGwen5YBNumuCe3y1NRuIBNrQ==&quot;,&#xd;
-  &quot;SK&quot;: &quot;KM+q0sV4P58Xrn4Y1VIIKsxYlV5dojIFaMTAvlfQ85Xv4UHR2q7//oRs+NY37cYBTAlJTiVzWU23SGZ4AFRtHN+KpwFOCtjDerAy0ZkuWmlXvBlQWSzw0aMpe/gDz9AFoUBGqV4zERN6AQUXaTubW64wNAaTIWhQvi/i64xma0qAQ+j0yv+xupUUACHVFhK8QC3sSfe3ZTQu8wEsM5+JERhtOLXrQvINngxKjCLEOMQ+Es+G4/ALW2pXjfEVUxv8C20xGJT775yr3qW1Uud4eqY1B9xOz45YW0ldQErXFa7h8I0Z4l1fVzoTptW7I3wTiCQj8ak88H+BJa/HJxy+cg==&quot;,&#xd;
-  &quot;Payload&quot;: &quot;pbC+XFbsvs7zkBNxwA44ZprXy7QJSh3uqyVZUhzkjDb0pSZ7J9ICln2U8+smFi1LEOHwLKGGhrkSBNgG7vL+A/qb4dCuG5a/tafCjKV1GAs7TOviRdC9irUhMU/ThPs9rIcfZhxXuPIwj/SKL1dFgwNGFEG1AympHxixQVxNxtHYmWQWDilXu5x1Lt7bNLFUAcY8eLDVIdl3tZhjziQoMXrpwWh6jpEvj4qyT6svfibY9mg9peFOCeXj8TfP02hGKVbPhxcjalQg2BTwfBlVxSpi7a2UtnXxocN6qFfHt0kgeZVCV/uqnN3q1BkYVL8c8l5R2KejgtSZQ3U370n30h8pQZDGuGtIZ1BV5+/v/tU=&quot;&#xd;
+  &quot;SV&quot;: &quot;ZAnMEwJrdYfT9xSNL/zjwGJb9JqaA83Wl7Kvv5tAsRGPxQK4dNrO26VWGhKojtayl5ZU8XyXEOrZQ0Vk8d39tGWBtwI/jpU9ojWPvszU6Mx98/WGT8c8GQxc5m/zGd/k2b9LVHN9YAyfCxcRqFkpV8jG0yovanJWxZ8W8mVhDKH66VBFX9cN5NNWvG37bRD/bNIjVrmxYK7Q1AtBjIUIrxoJdKMisPfL/jP6ECmEh1fTmEvYrL53xY1MjV9+rQ7exo6fn0IERtMacFAaxZcrDZzUoZOlKL0VyGu0lfRXMGqaRwG1MhslJ0W7S+qOsFzDdgYfQTpggnp5GKq07MltjQ==&quot;,&#xd;
+  &quot;SK&quot;: &quot;V+oL2ZvIvGMgVYvxzrJXZVwM3Coi+mZ4Z/Rtdcob3EwSn78GmRJvc+UyILzB8QExDGlJWKjW4Y7UFAcesJqNZJPLIF/+TJLiM/rMmNn73do2cmndCnXqSasKtUdc4FiqN3QrC3Wba+4NOc+mlagOSidJ6J3fZqXmhnBxFOBizY6iCmJjobu+oN1MU3BiOGZw6EWo6p+eG74cARmplV3NUKy+iDh9ReUbDs1AcAxag3sSSmCFgy2ybzNpJbHS0+3xbwoCnpLD1FfTzaSc1fwFAvIMsa/ZHklXVnU/2JQ9CpwY9x4cHwQao0CQab8S5s5UaZBFMzYAd785M7sqrDr9jA==&quot;,&#xd;
+  &quot;Payload&quot;: &quot;y/4SxVABw9O1wvczfOzU+knCKBMHHbsEgbvfZDMQdgCpZIC9vXmTr2AiFi9iOP8RZlTN75LHi3auHvWc1d4NbhKJYU1ohgavFPec1WIGD0TAj+dwQvLej6eg7Hy5SPVkmbZQ5xage8bEkRTvMwKns31L0j8q88yqeyTfRwemaOQCxtadYsGfHqAHaP4XGf0ehptjSp5UFvsfu1SfcTO/EclVsGeRgIzABE63poOwiaDkdtxWzzHRezuZWnGfFK/OHu7NFZw3/SPRKXhQ6Q4WGbikpPZhKXE/aIqv43Y1yAzXdc6TTnSDW6pwaNwdq6M0Jx4Dqk2IjCKX/Qwa9Y3p7nK9sS5nSm1h8aGKvdzwsQAZEfhBGJA3e1E1HTwtM4tD&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
