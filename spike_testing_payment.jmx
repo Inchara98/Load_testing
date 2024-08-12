@@ -234,8 +234,8 @@
             <stringProp name="48">0</stringProp>
             <stringProp name="48">0</stringProp>
           </collectionProp>
-          <collectionProp name="894995054">
-            <stringProp name="48625">100</stringProp>
+          <collectionProp name="464931563">
+            <stringProp name="52469">500</stringProp>
             <stringProp name="1691">50</stringProp>
             <stringProp name="48">0</stringProp>
             <stringProp name="1722">60</stringProp>
@@ -319,7 +319,7 @@
             <stringProp name="filename"></stringProp>
           </ResultCollector>
           <hashTree/>
-          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>
               <name>saveConfig</name>
