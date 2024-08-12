@@ -9,61 +9,12 @@
     <hashTree>
       <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="summary_payment">
         <collectionProp name="ultimatethreadgroupdata">
-          <collectionProp name="-1230133760">
+          <collectionProp name="829442860">
             <stringProp name="1567">10</stringProp>
             <stringProp name="0">0</stringProp>
-            <stringProp name="1567">10</stringProp>
-            <stringProp name="48">0</stringProp>
-            <stringProp name="1691">50</stringProp>
-          </collectionProp>
-          <collectionProp name="-1501089026">
-            <stringProp name="1691">50</stringProp>
-            <stringProp name="1567">10</stringProp>
-            <stringProp name="1691">50</stringProp>
-            <stringProp name="48">0</stringProp>
-            <stringProp name="48625">100</stringProp>
-          </collectionProp>
-          <collectionProp name="-224555664">
-            <stringProp name="100">100</stringProp>
-            <stringProp name="1722">60</stringProp>
-            <stringProp name="48625">100</stringProp>
-            <stringProp name="48">0</stringProp>
-            <stringProp name="48">0</stringProp>
-          </collectionProp>
-          <collectionProp name="5435376">
-            <stringProp name="1507423">1000</stringProp>
-            <stringProp name="48811">160</stringProp>
-            <stringProp name="48">0</stringProp>
-            <stringProp name="1722">60</stringProp>
-            <stringProp name="48625">100</stringProp>
-          </collectionProp>
-          <collectionProp name="-884899613">
-            <stringProp name="48625">100</stringProp>
-            <stringProp name="49648">220</stringProp>
-            <stringProp name="48625">100</stringProp>
-            <stringProp name="48">0</stringProp>
-            <stringProp name="48">0</stringProp>
-          </collectionProp>
-          <collectionProp name="-514755539">
-            <stringProp name="1626587">5000</stringProp>
-            <stringProp name="50609">320</stringProp>
-            <stringProp name="48">0</stringProp>
-            <stringProp name="1722">60</stringProp>
-            <stringProp name="1691">50</stringProp>
-          </collectionProp>
-          <collectionProp name="722979677">
-            <stringProp name="1691">50</stringProp>
-            <stringProp name="50795">380</stringProp>
-            <stringProp name="1691">50</stringProp>
-            <stringProp name="48">0</stringProp>
-            <stringProp name="48">0</stringProp>
-          </collectionProp>
-          <collectionProp name="-767984109">
-            <stringProp name="46730161">10000</stringProp>
-            <stringProp name="51601">430</stringProp>
-            <stringProp name="48">0</stringProp>
-            <stringProp name="1722">60</stringProp>
-            <stringProp name="48">0</stringProp>
+            <stringProp name="30">30</stringProp>
+            <stringProp name="60">60</stringProp>
+            <stringProp name="10">10</stringProp>
           </collectionProp>
         </collectionProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
@@ -134,7 +85,7 @@
             <stringProp name="filename"></stringProp>
           </ResultCollector>
           <hashTree/>
-          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>
               <name>saveConfig</name>
@@ -171,7 +122,7 @@
             <stringProp name="filename"></stringProp>
           </ResultCollector>
           <hashTree/>
-          <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report">
+          <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>
               <name>saveConfig</name>
@@ -208,7 +159,7 @@
             <stringProp name="filename"></stringProp>
           </ResultCollector>
           <hashTree/>
-          <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table">
+          <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>
               <name>saveConfig</name>
