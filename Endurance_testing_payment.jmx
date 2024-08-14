@@ -9,8 +9,8 @@
     <hashTree>
       <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="payment_Summary">
         <collectionProp name="ultimatethreadgroupdata">
-          <collectionProp name="-542002501">
-            <stringProp name="46730161">10000</stringProp>
+          <collectionProp name="-609556342">
+            <stringProp name="46879116">15000</stringProp>
             <stringProp name="48">0</stringProp>
             <stringProp name="48">0</stringProp>
             <stringProp name="50547">300</stringProp>
