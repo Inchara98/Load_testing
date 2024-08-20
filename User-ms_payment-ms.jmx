@@ -778,7 +778,7 @@
         </HeaderManager>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="get_summary_payments">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="get_summary_payments" enabled="false">
         <stringProp name="ThreadGroup.num_threads">${__P(users,1)}</stringProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -849,7 +849,7 @@
             <stringProp name="filename"></stringProp>
           </ResultCollector>
           <hashTree/>
-          <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+          <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>
               <name>saveConfig</name>
@@ -901,7 +901,7 @@
         </HeaderManager>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="get_payments" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="get_payments">
         <stringProp name="ThreadGroup.num_threads">${__P(users,1)}</stringProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -912,20 +912,7 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-          <collectionProp name="HeaderManager.headers">
-            <elementProp name="" elementType="Header">
-              <stringProp name="Header.name">Authorization</stringProp>
-              <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJvSS14anVfTDRQSmhlTjk1dlVsRF9YZzBqbnhIVl8wTGpsVlVxYXRkV0FVIn0.eyJleHAiOjE3MjQwMzczNDcsImlhdCI6MTcyMTg3NzM0NywianRpIjoiOGMwMDdjNWItZWQ1YS00ZjVhLWI5OWYtYmNhMGM0NTY1YTQyIiwiaXNzIjoiaHR0cDovL2ludGVybmFsLXNvdW5kYm94LWFsYi0xNDE2Nzk3MDY5LmFwLXNvdXRoLTEuZWxiLmFtYXpvbmF3cy5jb20vcmVhbG1zL3NvdW5kYm94IiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjU3NjUzZjQzLTVkNDktNDRiNi1iZmY3LTc2YTVhMTMyNGNhZiIsInR5cCI6IkJlYXJlciIsImF6cCI6InNvdW5kYm94LWNsaSIsInNlc3Npb25fc3RhdGUiOiI0MWE3ZjQ2ZS05MmRmLTQ3MDYtOTljOS00NmZhYzI5ZGMxYWYiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIi8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1zb3VuZGJveCJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsInNpZCI6IjQxYTdmNDZlLTkyZGYtNDcwNi05OWM5LTQ2ZmFjMjlkYzFhZiIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwibmFtZSI6Im1lcmNoYW50MiBqYW5hYmFuayIsInByZWZlcnJlZF91c2VybmFtZSI6Ijk3MzgzNTA1OTIiLCJnaXZlbl9uYW1lIjoibWVyY2hhbnQyIGphbmFiYW5rIn0.JHH00fylj5lBSV0fH7HdfedmZDgAEGBsOpAH767YSVsjtY-c3kdMnz4Xigm49GigYJ0Jrgszasu8gi4Jg6wvtIP1q4bw6DjpraK0hDEysH_ZJ3wgv8HQ32taVJMQQ146VucAuS_hT_NJTQzSbPpdxs0FFr_o0R8sI2ylCBfmhQjqMTDkzPGfbHUq8LW6Je2V7-UaTw7PkxBWAryBbA7nlao_v1ErXCdN4rBBDaOGCPkFovy3nNovY21Kfc2TPG_VI1q1iOJXcAhADAXW7Q72qRxKlWcEjc0nYIf8QsGSc3JlVKU1nPuuHKwU4q9H9XYDe4MDiomeMWiwJVx2G49aZw</stringProp>
-            </elementProp>
-            <elementProp name="" elementType="Header">
-              <stringProp name="Header.name">Content-Type</stringProp>
-              <stringProp name="Header.value">application/json</stringProp>
-            </elementProp>
-          </collectionProp>
-        </HeaderManager>
-        <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request">
           <stringProp name="HTTPSampler.domain">bscytxzsc3.execute-api.ap-south-1.amazonaws.com</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">payments/get</stringProp>
@@ -938,8 +925,9 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{ &#xd;
-    &quot;uuid&quot;: &quot;57653f43-5d49-44b6-bff7-76a5a1324caf&quot;&#xd;
-    ,&quot;vpa&quot;: &quot;jana2407390682@janabank&quot;&#xd;
+    &quot;uuid&quot;: &quot;bc767ea8-ab59-4ac7-99b9-09b6219f21e8&quot;,&#xd;
+    &quot;vpa&quot;: &quot;jana2407785382@janabank&quot;&#xd;
+&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
@@ -947,7 +935,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>
               <name>saveConfig</name>
@@ -984,7 +972,7 @@
             <stringProp name="filename"></stringProp>
           </ResultCollector>
           <hashTree/>
-          <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+          <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>
               <name>saveConfig</name>
@@ -1022,6 +1010,19 @@
           </ResultCollector>
           <hashTree/>
         </hashTree>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">Authorization</stringProp>
+              <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJvSS14anVfTDRQSmhlTjk1dlVsRF9YZzBqbnhIVl8wTGpsVlVxYXRkV0FVIn0.eyJleHAiOjE3MjYzMDQ1MTMsImlhdCI6MTcyNDE0NDUxMywianRpIjoiZjk3NGM0NTQtZGVlNy00MGFmLWIyMDktNDFiYWY5MTQ1NDAzIiwiaXNzIjoiaHR0cDovL2ludGVybmFsLXNvdW5kYm94LWFsYi0xNDE2Nzk3MDY5LmFwLXNvdXRoLTEuZWxiLmFtYXpvbmF3cy5jb20vcmVhbG1zL3NvdW5kYm94IiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjU3NjUzZjQzLTVkNDktNDRiNi1iZmY3LTc2YTVhMTMyNGNhZiIsInR5cCI6IkJlYXJlciIsImF6cCI6InNvdW5kYm94LWNsaSIsInNlc3Npb25fc3RhdGUiOiJhNTY2MzAxYi1kODc3LTRlZDctOTkxZS0zOWRlMzBiMDBjYzAiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIi8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1zb3VuZGJveCJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsInNpZCI6ImE1NjYzMDFiLWQ4NzctNGVkNy05OTFlLTM5ZGUzMGIwMGNjMCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwibmFtZSI6Im1lcmNoYW50MiBqYW5hYmFuayIsInByZWZlcnJlZF91c2VybmFtZSI6Ijk3MzgzNTA1OTIiLCJnaXZlbl9uYW1lIjoibWVyY2hhbnQyIGphbmFiYW5rIn0.Z0cvbtHR2UAR-QfoDgA4draM1Si5QfJ_dSOwPCZmnXfxUU0iEiB09JLh0AsYKgnnLzptntJlrJjqiXG0N1m1LvHAqJXSTOW9WoRr-yKNcgvzxmmskk4yxds-MvuJbXGQK83CpEj66lDVCI2zv65redTgoaIVFxC0J8NcfV2Y-itGgCuaBHvVP9pjHfmcWugIKRN-G6E9V89w1G3QLE8_plP-hN7IouEG2_3PX1IPGEBNwOXIY6YfPJtkBghs8jK4aEwgQKwrUIQ1LyAt3HJcbseTAf5R7uI9ew_tWNdxrj05dF-X20a9Ofh8vQQTgHhcnfN9T-LZAT2RrsJn7IGmFg</stringProp>
+            </elementProp>
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">Content-Type</stringProp>
+              <stringProp name="Header.value">application/json</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="add_payments" enabled="false">
         <intProp name="ThreadGroup.num_threads">2</intProp>
