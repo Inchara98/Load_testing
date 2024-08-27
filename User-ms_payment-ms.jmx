@@ -778,8 +778,8 @@
         </HeaderManager>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="get_summary_payments" enabled="false">
-        <stringProp name="ThreadGroup.num_threads">${__P(users,25000)}</stringProp>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="get_summary_payments">
+        <stringProp name="ThreadGroup.num_threads">${__P(users,1)}</stringProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -897,7 +897,7 @@
         </HeaderManager>
         <hashTree/>
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config">
-          <stringProp name="filename">/home/inchara/Jmeter/output_withdate.csv</stringProp>
+          <stringProp name="filename">/var/snap/amazon-ssm-agent/7993/apache-jmeter-5.3/bin/Load_testing/output_withdate.csv</stringProp>
           <stringProp name="fileEncoding"></stringProp>
           <stringProp name="variableNames">formatted_data</stringProp>
           <boolProp name="ignoreFirstLine">true</boolProp>
@@ -946,7 +946,7 @@
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="get_payments">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="get_payments" enabled="false">
         <stringProp name="ThreadGroup.num_threads">${__P(users,1)}</stringProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
