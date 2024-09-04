@@ -276,7 +276,7 @@
           <hashTree/>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="user-secrets">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="user-secrets" enabled="false">
         <stringProp name="ThreadGroup.num_threads">${__P(users,1)}</stringProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
