@@ -411,7 +411,7 @@
         </HeaderManager>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="get-account" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="get-account">
         <stringProp name="ThreadGroup.num_threads">${__P(users,1)}</stringProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -422,7 +422,7 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request">
           <stringProp name="HTTPSampler.domain">bscytxzsc3.execute-api.ap-south-1.amazonaws.com</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">user/accounts/get</stringProp>
@@ -443,7 +443,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>
               <name>saveConfig</name>
@@ -518,19 +518,6 @@
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-          <collectionProp name="HeaderManager.headers">
-            <elementProp name="" elementType="Header">
-              <stringProp name="Header.name">Authorization</stringProp>
-              <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJvSS14anVfTDRQSmhlTjk1dlVsRF9YZzBqbnhIVl8wTGpsVlVxYXRkV0FVIn0.eyJleHAiOjE3MjM4NzYwNzgsImlhdCI6MTcyMTcxNjA3OCwianRpIjoiMGJmMjU3NTEtMDE5NC00ZTI3LWEwNTEtZDMyNDNlNzc0YmUxIiwiaXNzIjoiaHR0cDovL2JzY3l0eHpzYzMuZXhlY3V0ZS1hcGkuYXAtc291dGgtMS5hbWF6b25hd3MuY29tL3JlYWxtcy9zb3VuZGJveCIsImF1ZCI6WyJyZWFsbS1tYW5hZ2VtZW50IiwiYWNjb3VudCJdLCJzdWIiOiJkMzc1ZTRkNS03MDk0LTRkYjItODgzZS02ZjFhNDRjMDUyMjciLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzb3VuZGJveC1jbGkiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIi8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1zb3VuZGJveCJdfSwicmVzb3VyY2VfYWNjZXNzIjp7InJlYWxtLW1hbmFnZW1lbnQiOnsicm9sZXMiOlsibWFuYWdlLXVzZXJzIl19LCJzb3VuZGJveC1jbGkiOnsicm9sZXMiOlsidW1hX3Byb3RlY3Rpb24iXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJ2aWV3LWNvbnNlbnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsIm1hbmFnZS1jb25zZW50Iiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJjbGllbnRIb3N0IjoiMTAuMTUwLjI2LjE4IiwicHJlZmVycmVkX3VzZXJuYW1lIjoic2VydmljZS1hY2NvdW50LXNvdW5kYm94LWNsaSIsImNsaWVudEFkZHJlc3MiOiIxMC4xNTAuMjYuMTgiLCJjbGllbnRfaWQiOiJzb3VuZGJveC1jbGkifQ.bvUb8GHYmYT1aLooKGP9NHtV6f09mnWlxZdATCw8o13oIDhup_q1JV8uj0QHG4Nlec-pScYBixCuNkO39bCFPuxIoNL244vgzlUxYs1cDeo1VOqdSfeoC_Lm-xG7WgwUa9EDArFfh3qiVT9-K1m7IJig5V4EbFHDPZRu9aMGd12nTjPaYZPs1BSIcXCqU8yDvWWNZef-6A5TZQNnumIfH60JQ8Wxg0NvxYUaDMAg-VUJV1Qg0bWKn3HTf3EmTaQ3DVYkvSWFP7JDtSQOrQOqDOkrIphTRHQTxyyZRhUNvKoqaqgr5BFmsQiiAwTNOpYd0_fNiKIf0EKleQKpQt7aSg</stringProp>
-            </elementProp>
-            <elementProp name="" elementType="Header">
-              <stringProp name="Header.name">Content-Type</stringProp>
-              <stringProp name="Header.value">application/json</stringProp>
-            </elementProp>
-          </collectionProp>
-        </HeaderManager>
-        <hashTree/>
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="false">
           <stringProp name="filename">/home/inchara/Jmeter/generate_otp.csv</stringProp>
           <stringProp name="fileEncoding"></stringProp>
@@ -542,6 +529,19 @@
           <boolProp name="stopThread">false</boolProp>
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
+        <hashTree/>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">Authorization</stringProp>
+              <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJvSS14anVfTDRQSmhlTjk1dlVsRF9YZzBqbnhIVl8wTGpsVlVxYXRkV0FVIn0.eyJleHAiOjE3Mjc0MDg4ODYsImlhdCI6MTcyNTI0ODg4NiwianRpIjoiMjVjYmI4M2ItYjhiYi00ODdlLWJmY2YtN2ZjMTY0M2M2MjM4IiwiaXNzIjoiaHR0cDovL2ludGVybmFsLXNvdW5kYm94LWFsYi0xNDE2Nzk3MDY5LmFwLXNvdXRoLTEuZWxiLmFtYXpvbmF3cy5jb20vcmVhbG1zL3NvdW5kYm94IiwiYXVkIjoiYWNjb3VudCIsInN1YiI6ImZmNjUxNjY0LTBlMTEtNDcyYy1hMDIxLTNhZTEyOWM3MzhkYSIsInR5cCI6IkJlYXJlciIsImF6cCI6InNvdW5kYm94LWNsaSIsInNlc3Npb25fc3RhdGUiOiIxZWM2MGEyYi03NGFiLTRiMGQtOTYyNi1mZWY2MWYzZmMwNWQiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIi8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1zb3VuZGJveCJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsInNpZCI6IjFlYzYwYTJiLTc0YWItNGIwZC05NjI2LWZlZjYxZjNmYzA1ZCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoiZ3Vlc3R1c2VyIn0.eOX9mb98PCGC2YnTpUxHrYW2FwPTcexEDJpydAJ5pybi1zErBSZyDj0unR96y57FTXiGTAGkFFB6MQTK1wwJx70dF6hLYj4get6EpelbgQ7ynvq1b1eu41zpJB0FUJr1BlGBnKn4vyvDelaJePsiyz1Wu9JyOgtGmv-Faaaq2THRZ2_pwiW2WH9KqdaedhUXWGmMhmeUalFYuPgSvqc2fQ4H7bP6LD5FZ3t7vzyq8akukfO7uN4dNLOD4JoeHru-EKBfbyZM7n6Ro4yztDgirWTbOHLpPvgkxKczj3dhEaMAYRvKzT0bYx579TGrasNzCtqrwxOKGs5nHqKJpuuIPw </stringProp>
+            </elementProp>
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">Content-Type</stringProp>
+              <stringProp name="Header.value">application/json</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
         <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="get_static_qr" enabled="false">
