@@ -9,7 +9,7 @@
       <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
     </TestPlan>
     <hashTree>
-      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="summary_payment">
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="summary_payment" enabled="false">
         <collectionProp name="ultimatethreadgroupdata">
           <collectionProp name="-1984814122">
             <stringProp name="50">50</stringProp>
@@ -235,7 +235,7 @@
         </HeaderManager>
         <hashTree/>
       </hashTree>
-      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="get_payment" enabled="false">
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="get_payment">
         <collectionProp name="ultimatethreadgroupdata">
           <collectionProp name="-1984814122">
             <stringProp name="50">50</stringProp>
@@ -244,8 +244,8 @@
             <stringProp name="48">0</stringProp>
             <stringProp name="48">0</stringProp>
           </collectionProp>
-          <collectionProp name="408993283">
-            <stringProp name="52469">500</stringProp>
+          <collectionProp name="839056774">
+            <stringProp name="48625">100</stringProp>
             <stringProp name="1691">50</stringProp>
             <stringProp name="48">0</stringProp>
             <stringProp name="1722">60</stringProp>
