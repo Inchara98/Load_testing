@@ -7,7 +7,7 @@
       </elementProp>
     </TestPlan>
     <hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="generate-otp" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="generate-otp">
         <stringProp name="ThreadGroup.num_threads">${__P(users,1)}</stringProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -86,7 +86,7 @@
             <stringProp name="filename"></stringProp>
           </ResultCollector>
           <hashTree/>
-          <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+          <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>
               <name>saveConfig</name>
@@ -907,7 +907,7 @@
           </collectionProp>
         </HeaderManager>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config">
           <stringProp name="filename">/var/snap/amazon-ssm-agent/7993/apache-jmeter-5.3/bin/Load_testing/output_withdate.csv</stringProp>
           <stringProp name="fileEncoding"></stringProp>
           <stringProp name="variableNames">formatted_data</stringProp>
@@ -919,7 +919,7 @@
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
+        <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -1099,20 +1099,7 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-          <collectionProp name="HeaderManager.headers">
-            <elementProp name="" elementType="Header">
-              <stringProp name="Header.name">Authorization</stringProp>
-              <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJvSS14anVfTDRQSmhlTjk1dlVsRF9YZzBqbnhIVl8wTGpsVlVxYXRkV0FVIn0.eyJleHAiOjE3MjM5NjEzMDAsImlhdCI6MTcyMTgwMTMwMCwianRpIjoiYWEzZWFmYjItM2EzNS00ZmQ5LWJjYmEtZWVhMGViNTBjZjFhIiwiaXNzIjoiaHR0cDovL2ludGVybmFsLXNvdW5kYm94LWFsYi0xNDE2Nzk3MDY5LmFwLXNvdXRoLTEuZWxiLmFtYXpvbmF3cy5jb20vcmVhbG1zL3NvdW5kYm94IiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjU3NjUzZjQzLTVkNDktNDRiNi1iZmY3LTc2YTVhMTMyNGNhZiIsInR5cCI6IkJlYXJlciIsImF6cCI6InNvdW5kYm94LWNsaSIsInNlc3Npb25fc3RhdGUiOiIyMGFiZjdjNC0xMzRhLTRmMTctYWZmOC04NWUzZTAwOTQ2YWUiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIi8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1zb3VuZGJveCJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsInNpZCI6IjIwYWJmN2M0LTEzNGEtNGYxNy1hZmY4LTg1ZTNlMDA5NDZhZSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwibmFtZSI6ImJoYXJnaGF2YSBrIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiOTczODM1MDU5MiIsImdpdmVuX25hbWUiOiJiaGFyZ2hhdmEgayJ9.JG5AE118ikMMy_2YAg38LPHYF4aP-bUKnlhfkOGF_MGvug3WUM-Lev_aqo5iyOqA0Xw_X4vZCxPk-xISQpblMRL6Jh40zhsWlVEqGz2m8MPzZH51SdFfOCQcxcaKqouyPRM53_Il7HBHmboCADRSFJfDCA0rUd1MTb6VFWqGZV5XH3nqfLnwStUtCf1C3oPif6XzHydaCAiuvgL0L--GDjDd7akAO16BJdTBJWs8-LZJfDuGXfkFpAAshvX_mvhAQZoYEbTXteHB52kqCQWBkeg-tzOTBacY0ifyMcqENcN_vJimX1SjyGelN6cA3R0u6odrftLHLzIF-2SBY9n1Lg</stringProp>
-            </elementProp>
-            <elementProp name="" elementType="Header">
-              <stringProp name="Header.name">Content-Type</stringProp>
-              <stringProp name="Header.value">application/json</stringProp>
-            </elementProp>
-          </collectionProp>
-        </HeaderManager>
-        <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request">
           <stringProp name="HTTPSampler.domain">bscytxzsc3.execute-api.ap-south-1.amazonaws.com</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">payments/simulate</stringProp>
@@ -1124,12 +1111,12 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{ &quot;merchant_mobile&quot;: &quot;9738350592&quot;,&#xd;
-  &quot;payee_vpa&quot;: &quot;jana2407390682@janabank&quot;,&#xd;
-  &quot;datetime&quot;: &quot;29/07/2024&quot;,&#xd;
-  &quot;amount&quot;: 25,&#xd;
-  &quot;payer_vpa&quot;: &quot;6437890&quot;,&#xd;
-  &quot;payer_name&quot;: &quot;abcd&quot; }&#xd;
+                <stringProp name="Argument.value">{ &quot;merchant_mobile&quot;: &quot;9731037150&quot;,&#xd;
+  &quot;payee_vpa&quot;: &quot;9731037150@janabank&quot; ,&#xd;
+  &quot;datetime&quot;: &quot;2024-09-05T12:49:30.452Z&quot;,&#xd;
+  &quot;amount&quot;: 5,&#xd;
+  &quot;payer_vpa&quot;: &quot;9731037151@janabank&quot;,&#xd;
+  &quot;payer_name&quot;: &quot;abc&quot; }&#xd;
   </stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
@@ -1137,7 +1124,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>
               <name>saveConfig</name>
@@ -1212,6 +1199,19 @@
           </ResultCollector>
           <hashTree/>
         </hashTree>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">Authorization</stringProp>
+              <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJvSS14anVfTDRQSmhlTjk1dlVsRF9YZzBqbnhIVl8wTGpsVlVxYXRkV0FVIn0.eyJleHAiOjE3MjYzMDQ1MTMsImlhdCI6MTcyNDE0NDUxMywianRpIjoiZjk3NGM0NTQtZGVlNy00MGFmLWIyMDktNDFiYWY5MTQ1NDAzIiwiaXNzIjoiaHR0cDovL2ludGVybmFsLXNvdW5kYm94LWFsYi0xNDE2Nzk3MDY5LmFwLXNvdXRoLTEuZWxiLmFtYXpvbmF3cy5jb20vcmVhbG1zL3NvdW5kYm94IiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjU3NjUzZjQzLTVkNDktNDRiNi1iZmY3LTc2YTVhMTMyNGNhZiIsInR5cCI6IkJlYXJlciIsImF6cCI6InNvdW5kYm94LWNsaSIsInNlc3Npb25fc3RhdGUiOiJhNTY2MzAxYi1kODc3LTRlZDctOTkxZS0zOWRlMzBiMDBjYzAiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIi8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1zb3VuZGJveCJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsInNpZCI6ImE1NjYzMDFiLWQ4NzctNGVkNy05OTFlLTM5ZGUzMGIwMGNjMCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwibmFtZSI6Im1lcmNoYW50MiBqYW5hYmFuayIsInByZWZlcnJlZF91c2VybmFtZSI6Ijk3MzgzNTA1OTIiLCJnaXZlbl9uYW1lIjoibWVyY2hhbnQyIGphbmFiYW5rIn0.Z0cvbtHR2UAR-QfoDgA4draM1Si5QfJ_dSOwPCZmnXfxUU0iEiB09JLh0AsYKgnnLzptntJlrJjqiXG0N1m1LvHAqJXSTOW9WoRr-yKNcgvzxmmskk4yxds-MvuJbXGQK83CpEj66lDVCI2zv65redTgoaIVFxC0J8NcfV2Y-itGgCuaBHvVP9pjHfmcWugIKRN-G6E9V89w1G3QLE8_plP-hN7IouEG2_3PX1IPGEBNwOXIY6YfPJtkBghs8jK4aEwgQKwrUIQ1LyAt3HJcbseTAf5R7uI9ew_tWNdxrj05dF-X20a9Ofh8vQQTgHhcnfN9T-LZAT2RrsJn7IGmFg</stringProp>
+            </elementProp>
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">Content-Type</stringProp>
+              <stringProp name="Header.value">application/json</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="payments" enabled="false">
         <stringProp name="ThreadGroup.num_threads">${__P(users,50)}</stringProp>
@@ -1804,7 +1804,7 @@
         </HeaderManager>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="uuid_association">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="uuid_association" enabled="false">
         <stringProp name="ThreadGroup.num_threads">${__P(users,1)}</stringProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
