@@ -60,7 +60,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report">
+          <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>
               <name>saveConfig</name>
@@ -97,7 +97,7 @@
             <stringProp name="filename"></stringProp>
           </ResultCollector>
           <hashTree/>
-          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>
               <name>saveConfig</name>
@@ -235,7 +235,7 @@
         </HeaderManager>
         <hashTree/>
       </hashTree>
-      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="get_payment">
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="get_payment" enabled="false">
         <collectionProp name="ultimatethreadgroupdata">
           <collectionProp name="-1984814122">
             <stringProp name="50">50</stringProp>
@@ -461,7 +461,7 @@
         </HeaderManager>
         <hashTree/>
       </hashTree>
-      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="add_payment" enabled="false">
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="add_payment">
         <collectionProp name="ultimatethreadgroupdata">
           <collectionProp name="-1984814122">
             <stringProp name="50">50</stringProp>
@@ -470,19 +470,19 @@
             <stringProp name="48">0</stringProp>
             <stringProp name="48">0</stringProp>
           </collectionProp>
-          <collectionProp name="-2052558810">
-            <stringProp name="1626587">5000</stringProp>
+          <collectionProp name="839056774">
+            <stringProp name="48625">100</stringProp>
             <stringProp name="1691">50</stringProp>
             <stringProp name="48">0</stringProp>
             <stringProp name="1722">60</stringProp>
-            <stringProp name="1691">50</stringProp>
+            <stringProp name="48">0</stringProp>
           </collectionProp>
-          <collectionProp name="113010865">
+          <collectionProp name="-2048130383">
             <stringProp name="1691">50</stringProp>
             <stringProp name="48656">110</stringProp>
+            <stringProp name="48">0</stringProp>
+            <stringProp name="48">0</stringProp>
             <stringProp name="1691">50</stringProp>
-            <stringProp name="48">0</stringProp>
-            <stringProp name="48">0</stringProp>
           </collectionProp>
         </collectionProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
@@ -492,11 +492,11 @@
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
       </kg.apc.jmeter.threads.UltimateThreadGroup>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request">
           <intProp name="HTTPSampler.concurrentPool">6</intProp>
           <stringProp name="HTTPSampler.domain">bscytxzsc3.execute-api.ap-south-1.amazonaws.com</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
-          <stringProp name="HTTPSampler.path">payments</stringProp>
+          <stringProp name="HTTPSampler.path">/payments-stub/simulate</stringProp>
           <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -505,11 +505,7 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&#xd;
-  &quot;SV&quot;: &quot;ZAnMEwJrdYfT9xSNL/zjwGJb9JqaA83Wl7Kvv5tAsRGPxQK4dNrO26VWGhKojtayl5ZU8XyXEOrZQ0Vk8d39tGWBtwI/jpU9ojWPvszU6Mx98/WGT8c8GQxc5m/zGd/k2b9LVHN9YAyfCxcRqFkpV8jG0yovanJWxZ8W8mVhDKH66VBFX9cN5NNWvG37bRD/bNIjVrmxYK7Q1AtBjIUIrxoJdKMisPfL/jP6ECmEh1fTmEvYrL53xY1MjV9+rQ7exo6fn0IERtMacFAaxZcrDZzUoZOlKL0VyGu0lfRXMGqaRwG1MhslJ0W7S+qOsFzDdgYfQTpggnp5GKq07MltjQ==&quot;,&#xd;
-  &quot;SK&quot;: &quot;V+oL2ZvIvGMgVYvxzrJXZVwM3Coi+mZ4Z/Rtdcob3EwSn78GmRJvc+UyILzB8QExDGlJWKjW4Y7UFAcesJqNZJPLIF/+TJLiM/rMmNn73do2cmndCnXqSasKtUdc4FiqN3QrC3Wba+4NOc+mlagOSidJ6J3fZqXmhnBxFOBizY6iCmJjobu+oN1MU3BiOGZw6EWo6p+eG74cARmplV3NUKy+iDh9ReUbDs1AcAxag3sSSmCFgy2ybzNpJbHS0+3xbwoCnpLD1FfTzaSc1fwFAvIMsa/ZHklXVnU/2JQ9CpwY9x4cHwQao0CQab8S5s5UaZBFMzYAd785M7sqrDr9jA==&quot;,&#xd;
-  &quot;Payload&quot;: &quot;y/4SxVABw9O1wvczfOzU+knCKBMHHbsEgbvfZDMQdgCpZIC9vXmTr2AiFi9iOP8RZlTN75LHi3auHvWc1d4NbhKJYU1ohgavFPec1WIGD0TAj+dwQvLej6eg7Hy5SPVkmbZQ5xage8bEkRTvMwKns31L0j8q88yqeyTfRwemaOQCxtadYsGfHqAHaP4XGf0ehptjSp5UFvsfu1SfcTO/EclVsGeRgIzABE63poOwiaDkdtxWzzHRezuZWnGfFK/OHu7NFZw3/SPRKXhQ6Q4WGbikpPZhKXE/aIqv43Y1yAzXdc6TTnSDW6pwaNwdq6M0Jx4Dqk2IjCKX/Qwa9Y3p7nK9sS5nSm1h8aGKvdzwsQAZEfhBGJA3e1E1HTwtM4tD&quot;&#xd;
-}</stringProp>
+                <stringProp name="Argument.value">${body}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -553,7 +549,7 @@
             <stringProp name="filename"></stringProp>
           </ResultCollector>
           <hashTree/>
-          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>
               <name>saveConfig</name>
@@ -627,7 +623,7 @@
             <stringProp name="filename"></stringProp>
           </ResultCollector>
           <hashTree/>
-          <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
+          <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>
               <name>saveConfig</name>
@@ -665,11 +661,23 @@
           </ResultCollector>
           <hashTree/>
         </hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config">
+          <stringProp name="filename">/var/snap/amazon-ssm-agent/7993/apache-jmeter-5.3/bin/Load_testing/add_payment.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames">body</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">true</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
         <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
           <collectionProp name="HeaderManager.headers">
             <elementProp name="" elementType="Header">
               <stringProp name="Header.name">Authorization</stringProp>
-              <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJvSS14anVfTDRQSmhlTjk1dlVsRF9YZzBqbnhIVl8wTGpsVlVxYXRkV0FVIn0.eyJleHAiOjE3MjM4NzYwNzgsImlhdCI6MTcyMTcxNjA3OCwianRpIjoiMGJmMjU3NTEtMDE5NC00ZTI3LWEwNTEtZDMyNDNlNzc0YmUxIiwiaXNzIjoiaHR0cDovL2JzY3l0eHpzYzMuZXhlY3V0ZS1hcGkuYXAtc291dGgtMS5hbWF6b25hd3MuY29tL3JlYWxtcy9zb3VuZGJveCIsImF1ZCI6WyJyZWFsbS1tYW5hZ2VtZW50IiwiYWNjb3VudCJdLCJzdWIiOiJkMzc1ZTRkNS03MDk0LTRkYjItODgzZS02ZjFhNDRjMDUyMjciLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzb3VuZGJveC1jbGkiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIi8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1zb3VuZGJveCJdfSwicmVzb3VyY2VfYWNjZXNzIjp7InJlYWxtLW1hbmFnZW1lbnQiOnsicm9sZXMiOlsibWFuYWdlLXVzZXJzIl19LCJzb3VuZGJveC1jbGkiOnsicm9sZXMiOlsidW1hX3Byb3RlY3Rpb24iXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJ2aWV3LWNvbnNlbnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsIm1hbmFnZS1jb25zZW50Iiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJjbGllbnRIb3N0IjoiMTAuMTUwLjI2LjE4IiwicHJlZmVycmVkX3VzZXJuYW1lIjoic2VydmljZS1hY2NvdW50LXNvdW5kYm94LWNsaSIsImNsaWVudEFkZHJlc3MiOiIxMC4xNTAuMjYuMTgiLCJjbGllbnRfaWQiOiJzb3VuZGJveC1jbGkifQ.bvUb8GHYmYT1aLooKGP9NHtV6f09mnWlxZdATCw8o13oIDhup_q1JV8uj0QHG4Nlec-pScYBixCuNkO39bCFPuxIoNL244vgzlUxYs1cDeo1VOqdSfeoC_Lm-xG7WgwUa9EDArFfh3qiVT9-K1m7IJig5V4EbFHDPZRu9aMGd12nTjPaYZPs1BSIcXCqU8yDvWWNZef-6A5TZQNnumIfH60JQ8Wxg0NvxYUaDMAg-VUJV1Qg0bWKn3HTf3EmTaQ3DVYkvSWFP7JDtSQOrQOqDOkrIphTRHQTxyyZRhUNvKoqaqgr5BFmsQiiAwTNOpYd0_fNiKIf0EKleQKpQt7aSg</stringProp>
+              <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJvSS14anVfTDRQSmhlTjk1dlVsRF9YZzBqbnhIVl8wTGpsVlVxYXRkV0FVIn0.eyJleHAiOjE3MjYzMDQ1MTMsImlhdCI6MTcyNDE0NDUxMywianRpIjoiZjk3NGM0NTQtZGVlNy00MGFmLWIyMDktNDFiYWY5MTQ1NDAzIiwiaXNzIjoiaHR0cDovL2ludGVybmFsLXNvdW5kYm94LWFsYi0xNDE2Nzk3MDY5LmFwLXNvdXRoLTEuZWxiLmFtYXpvbmF3cy5jb20vcmVhbG1zL3NvdW5kYm94IiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjU3NjUzZjQzLTVkNDktNDRiNi1iZmY3LTc2YTVhMTMyNGNhZiIsInR5cCI6IkJlYXJlciIsImF6cCI6InNvdW5kYm94LWNsaSIsInNlc3Npb25fc3RhdGUiOiJhNTY2MzAxYi1kODc3LTRlZDctOTkxZS0zOWRlMzBiMDBjYzAiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIi8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1zb3VuZGJveCJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsInNpZCI6ImE1NjYzMDFiLWQ4NzctNGVkNy05OTFlLTM5ZGUzMGIwMGNjMCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwibmFtZSI6Im1lcmNoYW50MiBqYW5hYmFuayIsInByZWZlcnJlZF91c2VybmFtZSI6Ijk3MzgzNTA1OTIiLCJnaXZlbl9uYW1lIjoibWVyY2hhbnQyIGphbmFiYW5rIn0.Z0cvbtHR2UAR-QfoDgA4draM1Si5QfJ_dSOwPCZmnXfxUU0iEiB09JLh0AsYKgnnLzptntJlrJjqiXG0N1m1LvHAqJXSTOW9WoRr-yKNcgvzxmmskk4yxds-MvuJbXGQK83CpEj66lDVCI2zv65redTgoaIVFxC0J8NcfV2Y-itGgCuaBHvVP9pjHfmcWugIKRN-G6E9V89w1G3QLE8_plP-hN7IouEG2_3PX1IPGEBNwOXIY6YfPJtkBghs8jK4aEwgQKwrUIQ1LyAt3HJcbseTAf5R7uI9ew_tWNdxrj05dF-X20a9Ofh8vQQTgHhcnfN9T-LZAT2RrsJn7IGmFg</stringProp>
             </elementProp>
             <elementProp name="" elementType="Header">
               <stringProp name="Header.name">Content-Type</stringProp>
