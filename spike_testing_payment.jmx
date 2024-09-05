@@ -436,7 +436,7 @@
           <hashTree/>
         </hashTree>
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config">
-          <stringProp name="filename">/home/inchara/Jmeter/output.csv</stringProp>
+          <stringProp name="filename">/var/snap/amazon-ssm-agent/7993/apache-jmeter-5.3/bin/Load_testing/output.csv</stringProp>
           <stringProp name="fileEncoding"></stringProp>
           <stringProp name="variableNames">body</stringProp>
           <boolProp name="ignoreFirstLine">true</boolProp>
