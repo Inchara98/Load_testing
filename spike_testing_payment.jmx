@@ -244,8 +244,8 @@
             <stringProp name="48">0</stringProp>
             <stringProp name="48">0</stringProp>
           </collectionProp>
-          <collectionProp name="839056774">
-            <stringProp name="48625">100</stringProp>
+          <collectionProp name="408993283">
+            <stringProp name="52469">500</stringProp>
             <stringProp name="1691">50</stringProp>
             <stringProp name="48">0</stringProp>
             <stringProp name="1722">60</stringProp>
@@ -512,7 +512,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+          <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>
               <name>saveConfig</name>
