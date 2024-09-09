@@ -149,11 +149,11 @@
       </hashTree>
       <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="payment_get">
         <collectionProp name="ultimatethreadgroupdata">
-          <collectionProp name="-1826893499">
+          <collectionProp name="-1554487623">
             <stringProp name="1507423">1000</stringProp>
             <stringProp name="48">0</stringProp>
             <stringProp name="48">0</stringProp>
-            <stringProp name="1722">60</stringProp>
+            <stringProp name="50547">300</stringProp>
             <stringProp name="48">0</stringProp>
           </collectionProp>
         </collectionProp>
