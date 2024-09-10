@@ -1349,19 +1349,19 @@
             <stringProp name="48">0</stringProp>
             <stringProp name="48">0</stringProp>
           </collectionProp>
-          <collectionProp name="-2052558810">
-            <stringProp name="1626587">5000</stringProp>
+          <collectionProp name="839056774">
+            <stringProp name="48625">100</stringProp>
             <stringProp name="1691">50</stringProp>
             <stringProp name="48">0</stringProp>
             <stringProp name="1722">60</stringProp>
-            <stringProp name="1691">50</stringProp>
+            <stringProp name="48">0</stringProp>
           </collectionProp>
-          <collectionProp name="113010865">
+          <collectionProp name="-2048130383">
             <stringProp name="1691">50</stringProp>
             <stringProp name="48656">110</stringProp>
+            <stringProp name="48">0</stringProp>
+            <stringProp name="48">0</stringProp>
             <stringProp name="1691">50</stringProp>
-            <stringProp name="48">0</stringProp>
-            <stringProp name="48">0</stringProp>
           </collectionProp>
         </collectionProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
