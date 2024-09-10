@@ -1340,7 +1340,7 @@
         </HeaderManager>
         <hashTree/>
       </hashTree>
-      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="generate_qr" enabled="false">
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="generate_qr">
         <collectionProp name="ultimatethreadgroupdata">
           <collectionProp name="-1984814122">
             <stringProp name="50">50</stringProp>
@@ -1431,7 +1431,7 @@
             <stringProp name="filename"></stringProp>
           </ResultCollector>
           <hashTree/>
-          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>
               <name>saveConfig</name>
@@ -1547,7 +1547,7 @@
           <collectionProp name="HeaderManager.headers">
             <elementProp name="" elementType="Header">
               <stringProp name="Header.name">Authorization</stringProp>
-              <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJvSS14anVfTDRQSmhlTjk1dlVsRF9YZzBqbnhIVl8wTGpsVlVxYXRkV0FVIn0.eyJleHAiOjE3MjM4NzYwNzgsImlhdCI6MTcyMTcxNjA3OCwianRpIjoiMGJmMjU3NTEtMDE5NC00ZTI3LWEwNTEtZDMyNDNlNzc0YmUxIiwiaXNzIjoiaHR0cDovL2JzY3l0eHpzYzMuZXhlY3V0ZS1hcGkuYXAtc291dGgtMS5hbWF6b25hd3MuY29tL3JlYWxtcy9zb3VuZGJveCIsImF1ZCI6WyJyZWFsbS1tYW5hZ2VtZW50IiwiYWNjb3VudCJdLCJzdWIiOiJkMzc1ZTRkNS03MDk0LTRkYjItODgzZS02ZjFhNDRjMDUyMjciLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzb3VuZGJveC1jbGkiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIi8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1zb3VuZGJveCJdfSwicmVzb3VyY2VfYWNjZXNzIjp7InJlYWxtLW1hbmFnZW1lbnQiOnsicm9sZXMiOlsibWFuYWdlLXVzZXJzIl19LCJzb3VuZGJveC1jbGkiOnsicm9sZXMiOlsidW1hX3Byb3RlY3Rpb24iXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJ2aWV3LWNvbnNlbnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsIm1hbmFnZS1jb25zZW50Iiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJjbGllbnRIb3N0IjoiMTAuMTUwLjI2LjE4IiwicHJlZmVycmVkX3VzZXJuYW1lIjoic2VydmljZS1hY2NvdW50LXNvdW5kYm94LWNsaSIsImNsaWVudEFkZHJlc3MiOiIxMC4xNTAuMjYuMTgiLCJjbGllbnRfaWQiOiJzb3VuZGJveC1jbGkifQ.bvUb8GHYmYT1aLooKGP9NHtV6f09mnWlxZdATCw8o13oIDhup_q1JV8uj0QHG4Nlec-pScYBixCuNkO39bCFPuxIoNL244vgzlUxYs1cDeo1VOqdSfeoC_Lm-xG7WgwUa9EDArFfh3qiVT9-K1m7IJig5V4EbFHDPZRu9aMGd12nTjPaYZPs1BSIcXCqU8yDvWWNZef-6A5TZQNnumIfH60JQ8Wxg0NvxYUaDMAg-VUJV1Qg0bWKn3HTf3EmTaQ3DVYkvSWFP7JDtSQOrQOqDOkrIphTRHQTxyyZRhUNvKoqaqgr5BFmsQiiAwTNOpYd0_fNiKIf0EKleQKpQt7aSg</stringProp>
+              <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJvSS14anVfTDRQSmhlTjk1dlVsRF9YZzBqbnhIVl8wTGpsVlVxYXRkV0FVIn0.eyJleHAiOjE3MjYzMDQ1MTMsImlhdCI6MTcyNDE0NDUxMywianRpIjoiZjk3NGM0NTQtZGVlNy00MGFmLWIyMDktNDFiYWY5MTQ1NDAzIiwiaXNzIjoiaHR0cDovL2ludGVybmFsLXNvdW5kYm94LWFsYi0xNDE2Nzk3MDY5LmFwLXNvdXRoLTEuZWxiLmFtYXpvbmF3cy5jb20vcmVhbG1zL3NvdW5kYm94IiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjU3NjUzZjQzLTVkNDktNDRiNi1iZmY3LTc2YTVhMTMyNGNhZiIsInR5cCI6IkJlYXJlciIsImF6cCI6InNvdW5kYm94LWNsaSIsInNlc3Npb25fc3RhdGUiOiJhNTY2MzAxYi1kODc3LTRlZDctOTkxZS0zOWRlMzBiMDBjYzAiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIi8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZGVmYXVsdC1yb2xlcy1zb3VuZGJveCJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsInNpZCI6ImE1NjYzMDFiLWQ4NzctNGVkNy05OTFlLTM5ZGUzMGIwMGNjMCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwibmFtZSI6Im1lcmNoYW50MiBqYW5hYmFuayIsInByZWZlcnJlZF91c2VybmFtZSI6Ijk3MzgzNTA1OTIiLCJnaXZlbl9uYW1lIjoibWVyY2hhbnQyIGphbmFiYW5rIn0.Z0cvbtHR2UAR-QfoDgA4draM1Si5QfJ_dSOwPCZmnXfxUU0iEiB09JLh0AsYKgnnLzptntJlrJjqiXG0N1m1LvHAqJXSTOW9WoRr-yKNcgvzxmmskk4yxds-MvuJbXGQK83CpEj66lDVCI2zv65redTgoaIVFxC0J8NcfV2Y-itGgCuaBHvVP9pjHfmcWugIKRN-G6E9V89w1G3QLE8_plP-hN7IouEG2_3PX1IPGEBNwOXIY6YfPJtkBghs8jK4aEwgQKwrUIQ1LyAt3HJcbseTAf5R7uI9ew_tWNdxrj05dF-X20a9Ofh8vQQTgHhcnfN9T-LZAT2RrsJn7IGmFg</stringProp>
             </elementProp>
             <elementProp name="" elementType="Header">
               <stringProp name="Header.name">Content-Type</stringProp>
@@ -2002,7 +2002,7 @@
         </HeaderManager>
         <hashTree/>
       </hashTree>
-      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="get_accounts">
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="get_accounts" enabled="false">
         <collectionProp name="ultimatethreadgroupdata">
           <collectionProp name="-1984814122">
             <stringProp name="50">50</stringProp>
