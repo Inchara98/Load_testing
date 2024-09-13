@@ -7,7 +7,7 @@
       </elementProp>
     </TestPlan>
     <hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="generate-otp">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="generate-otp" enabled="false">
         <stringProp name="ThreadGroup.num_threads">${__P(users,1)}</stringProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -138,8 +138,8 @@
         </CSVDataSet>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="verify-otp" enabled="false">
-        <stringProp name="ThreadGroup.num_threads">${__P(users,1)}</stringProp>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="verify-otp">
+        <stringProp name="ThreadGroup.num_threads">${__P(users,5)}</stringProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -174,10 +174,10 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;otp&quot;: 401020,&#xd;
-  &quot;mobile_number&quot;: &quot;8310840050&quot;,&#xd;
+  &quot;otp&quot;: 329066,&#xd;
+  &quot;mobile_number&quot;: &quot;9731037150&quot;,&#xd;
   &quot;device_id&quot;: &quot;345343453&quot;,&#xd;
-  &quot;identification&quot;: &quot;1129&quot;&#xd;
+  &quot;identification&quot;: &quot;N64BO7SLI&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
