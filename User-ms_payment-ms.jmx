@@ -790,7 +790,7 @@
         <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="get_summary_payments">
-        <stringProp name="ThreadGroup.num_threads">${__P(users,2)}</stringProp>
+        <stringProp name="ThreadGroup.num_threads">${__P(users,1)}</stringProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -958,7 +958,7 @@
         <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="get_payments">
-        <stringProp name="ThreadGroup.num_threads">${__P(users,2)}</stringProp>
+        <stringProp name="ThreadGroup.num_threads">${__P(users,1)}</stringProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -1112,8 +1112,8 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-     &quot;merchant_mobile&quot;: &quot;9986074967&quot;,&#xd;
-    &quot;payee_vpa&quot;: &quot;jana2407785382@janabank&quot;,&#xd;
+     &quot;merchant_mobile&quot;: &quot;9731037150&quot;,&#xd;
+    &quot;payee_vpa&quot;: &quot;9731037150@janabank&quot;,&#xd;
     &quot;datetime&quot;: &quot;2024-09-18 03:28:02.043Z&quot;,&#xd;
     &quot;amount&quot;: 5,&#xd;
     &quot;payer_vpa&quot;: &quot;user1407@bank&quot;,&#xd;
