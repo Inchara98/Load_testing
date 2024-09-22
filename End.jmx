@@ -10,11 +10,11 @@
     <hashTree>
       <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="payment_Summary">
         <collectionProp name="ultimatethreadgroupdata">
-          <collectionProp name="-1336917322">
-            <stringProp name="52469">500</stringProp>
+          <collectionProp name="-1826893499">
+            <stringProp name="1507423">1000</stringProp>
             <stringProp name="48">0</stringProp>
             <stringProp name="48">0</stringProp>
-            <stringProp name="53430">600</stringProp>
+            <stringProp name="1722">60</stringProp>
             <stringProp name="48">0</stringProp>
           </collectionProp>
         </collectionProp>
@@ -148,11 +148,11 @@
       </hashTree>
       <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="payment_get">
         <collectionProp name="ultimatethreadgroupdata">
-          <collectionProp name="772864878">
-            <stringProp name="52469">500</stringProp>
+          <collectionProp name="-1083749423">
+            <stringProp name="1507423">1000</stringProp>
             <stringProp name="48">0</stringProp>
             <stringProp name="48">0</stringProp>
-            <stringProp name="53430">600</stringProp>
+            <stringProp name="1722">60</stringProp>
             <stringProp name="48">0</stringProp>
           </collectionProp>
         </collectionProp>
